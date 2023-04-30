@@ -1,0 +1,19 @@
+<p *ngIf="data">{{data|json}}</p>
+
+
+<form [formGroup]="dataform">
+    <input type="text" formControlName="name">
+    <input type="email" formControlName="email">
+    <div>
+        <input type="radio" name="gender" formControlName="gender">male
+        <input type="radio" name="gender" formControlName="gender">female
+
+    </div>
+    <div>
+        <input type="radio" name="status" formControlName="status">active
+        <input type="radio" name="status" formControlName="status">inactive
+
+    </div>
+    <button type="button" class="btn btn-primary">submit</button></form>
+
+<button type="button" class="btn btn-primary" routerLink="">BAck</button>
